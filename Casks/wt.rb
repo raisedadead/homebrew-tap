@@ -3,7 +3,7 @@ cask "wt" do
   name "wt"
   desc "Git worktree manager with bare repo support"
   homepage "https://github.com/raisedadead/wt"
-  version "0.1.2"
+  version "0.1.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -18,22 +18,22 @@ cask "wt" do
   on_macos do
     on_intel do
       url "https://github.com/raisedadead/wt/releases/download/v#{version}/wt_darwin_amd64.tar.gz"
-      sha256 "1793bd82e797bd748773063a651bd84dd9ff92f84a615e62cd987bbe479bfe99"
+      sha256 "0e9d04986173ef00917596bad9d9a35f133b6e5b983da91b0fde0bf73d7b7a7e"
     end
     on_arm do
       url "https://github.com/raisedadead/wt/releases/download/v#{version}/wt_darwin_arm64.tar.gz"
-      sha256 "9b8d0a0b43ebdd0d5648d7e9b8e7efd089caba61982309461fb3c1c221c16786"
+      sha256 "0b80548478ce25e1eb041c0cadfc98919f9ea35b69e2ea39ad3dcc40d0b02702"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/raisedadead/wt/releases/download/v#{version}/wt_linux_amd64.tar.gz"
-      sha256 "499af9bb90f02a7fd075f004e9a891c40ad9fe704c18dd10c0a5bbf3b73e8447"
+      sha256 "5edd01cd5842db5466bacb83df457ac8a8989db7168ccef2c8b9c4f40cf40e65"
     end
     on_arm do
       url "https://github.com/raisedadead/wt/releases/download/v#{version}/wt_linux_arm64.tar.gz"
-      sha256 "c5693bf61a65c8df5fbbe039737812aa72d2ae1bf128a98749eb6312b397ee47"
+      sha256 "0855a0bbe7c9c1a64554a95c62d5771682484fa5f34802293c1010b3159beaaa"
     end
   end
 
