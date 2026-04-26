@@ -1,22 +1,22 @@
 class DpEngine < Formula
   desc "Beads-native engine for dp-cto orchestration"
   homepage "https://github.com/raisedadead/dotplugins"
-  version "8.6.4"
+  version "8.6.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raisedadead/dotplugins/releases/download/v8.6.4/dp-engine-darwin-arm64"
-      sha256 "f1b0e19df34c32594903192f03cbc10dd2c66389d0e9e64bc25108aa8a76d00e"
+      url "https://github.com/raisedadead/dotplugins/releases/download/v8.6.5/dp-engine-darwin-arm64"
+      sha256 "604a66377a5e7a9543f6f629391ea7d153808312d1b600ae1ec1d37d6c20e8f8"
     else
-      url "https://github.com/raisedadead/dotplugins/releases/download/v8.6.4/dp-engine-darwin-amd64"
-      sha256 "c665d9c48b9e9ca95d934c5abff66192da0c5511f2969cef1b2b9a2ef0fcec51"
+      url "https://github.com/raisedadead/dotplugins/releases/download/v8.6.5/dp-engine-darwin-amd64"
+      sha256 "32a49dd0b782e272e6f395e65a4e30914ac202592e7e7ddd30cf9bc20964e877"
     end
   end
 
   on_linux do
-    url "https://github.com/raisedadead/dotplugins/releases/download/v8.6.4/dp-engine-linux-amd64"
-    sha256 "9c5ac014620903682aaa36212e439557a10219f72a95b36e4e4a31e86bf6a78f"
+    url "https://github.com/raisedadead/dotplugins/releases/download/v8.6.5/dp-engine-linux-amd64"
+    sha256 "c62b4de82c64efae3d86f44fcfd68e90f6b3cb1a92533a7f4a923970aeb2bd1a"
   end
 
   def install
