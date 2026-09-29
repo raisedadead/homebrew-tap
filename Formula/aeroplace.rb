@@ -2,8 +2,8 @@ class Aeroplace < Formula
   desc "Places floating windows for the AeroSpace window manager"
   homepage "https://github.com/raisedadead/aeroplace"
   url "https://github.com/raisedadead/aeroplace.git",
-      tag:      "v0.1.0",
-      revision: "bf5453a962f7e9b866cb5606892bde8da119064d"
+      tag:      "v0.1.1",
+      revision: "c8ecef8ac4703b91e1c5cd99d500be38abd48ffd"
   license "ISC"
   head "https://github.com/raisedadead/aeroplace.git", branch: "main"
 
