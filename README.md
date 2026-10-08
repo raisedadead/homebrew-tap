@@ -6,15 +6,16 @@ Homebrew formulae and casks for tools by [raisedadead](https://github.com/raised
 brew install raisedadead/tap/<name>
 ```
 
-| Name        | Kind    | Source                                                              |
-| ----------- | ------- | ------------------------------------------------------------------- |
-| `aeroplace` | formula | [raisedadead/aeroplace](https://github.com/raisedadead/aeroplace)   |
-| `dp-engine` | formula | [raisedadead/dotplugins](https://github.com/raisedadead/dotplugins) |
-| `wt`        | cask    | [raisedadead/wt](https://github.com/raisedadead/wt)                 |
+| Name           | Kind    | Source                                                                  |
+| -------------- | ------- | ----------------------------------------------------------------------- |
+| `aeroplace`    | formula | [raisedadead/aeroplace](https://github.com/raisedadead/aeroplace)       |
+| `dp-engine`    | formula | [raisedadead/dotplugins](https://github.com/raisedadead/dotplugins)     |
+| `sketchyusage` | formula | [raisedadead/SketchyUsage](https://github.com/raisedadead/SketchyUsage) |
+| `wt`           | cask    | [raisedadead/wt](https://github.com/raisedadead/wt)                     |
 
 ## Update a package
 
-A release pipeline in the source repository writes `dp-engine` and `wt`. Update `aeroplace` by hand.
+A release pipeline in the source repository writes `dp-engine` and `wt`. Update `aeroplace` and `sketchyusage` by hand.
 
 ### dp-engine
 
@@ -52,3 +53,13 @@ The formula builds from source at a git tag. It pins the tag and the commit.
    brew upgrade raisedadead/tap/aeroplace
    brew test raisedadead/tap/aeroplace
    ```
+
+### sketchyusage
+
+The formula builds from source at a git tag, like `aeroplace`. Follow the `aeroplace` steps with `Formula/sketchyusage.rb`, the SketchyUsage clone, and the commit subject `feat(formula): update sketchyusage to <version>`. Its `AGENTS.md` gives the release steps.
+
+After an upgrade, restart the service:
+
+```sh
+brew services restart sketchyusage
+```
