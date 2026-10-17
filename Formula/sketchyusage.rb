@@ -2,8 +2,8 @@ class Sketchyusage < Formula
   desc "Claude and Codex usage for SketchyBar with a native panel"
   homepage "https://github.com/raisedadead/SketchyUsage"
   url "https://github.com/raisedadead/SketchyUsage.git",
-      tag:      "v0.2.0",
-      revision: "84ff7b9dd4417c6989413ba6c261656d99859772"
+      tag:      "v0.3.0",
+      revision: "873137bd54d9a8ba8ec6f1cbaca79235022c098d"
   license "ISC"
   head "https://github.com/raisedadead/SketchyUsage.git", branch: "main"
 
